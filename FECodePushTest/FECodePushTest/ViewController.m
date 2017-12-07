@@ -29,7 +29,7 @@
 }
 
 - (void)setup {
-    NSURL *jsCodeLocation = [CodePush bundleURL];
+    NSURL *jsCodeLocation = [CodePush bundleURLForResource:@"main" withExtension:@"jsbundle" subdirectory:@"bundle"];
     RCTRootView *rootView =
     [[RCTRootView alloc] initWithBundleURL : jsCodeLocation
                          moduleName        : @"FECodePushTest"
